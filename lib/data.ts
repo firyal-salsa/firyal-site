@@ -35,28 +35,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "DevOps Engineer",
+    location: "Jakarta, Indonesia",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I am working as fulltime DevOps Engineer, Support CI/CD pipeline for developer team, Provide Infrastructure recovery disaster.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "September 2023 - now",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Software Engineer",
+    location: "Bandung, Indonesia",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I worked as a Software Engineer for 1 year 7 month, I used Odoo",
+    icon: React.createElement(CgWorkAlt),
+    date: "February 2022 - August 2023",
+  },
+  {
+    title: "Graduate Bootcamp",
+    location: "Arkademy Tech Academy, Indonesia",
+    description:
+      "I took DevOps class.",
+    icon: React.createElement(LuGraduationCap),
+    date: "June 2021 - October 2021",
   },
 ] as const;
 
@@ -85,23 +85,9 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
+  "Odoo",
   "Python",
-  "Django",
-  "Framer Motion",
+  "JavaScript",
+  "AWS",
+  "Docker"
 ] as const;
