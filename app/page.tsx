@@ -13,7 +13,7 @@ export default function Home() {
       <SectionDivider />
       <About />
       <Projects />
-      <Skills />
+      {/* <Skills /> */}
       <Experience />
       <Contact />
     </main>
