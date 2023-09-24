@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import { CgWorkAlt } from "react-icons/cg";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -37,12 +38,12 @@ export default function Experience() {
                     : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
               date={item.date}
-              icon={item.icon}
-              // iconStyle={{
-              //   background:
-              //     theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
-              //   fontSize: "1.5rem",
-              // }}
+              icon={<CgWorkAlt />}
+              iconStyle={{
+                background:
+                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                fontSize: "1.5rem",
+              }}
             >
               <h3 className="font-semibold capitalize text-white">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
