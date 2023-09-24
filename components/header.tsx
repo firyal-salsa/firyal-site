@@ -26,10 +26,9 @@ export default function Header() {
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-end px-3 py-3 transition text-white ",
+                  "flex w-full items-center justify-end px-3 py-3 transition text-white relative", // Added relative here
                   {
-                    "text-gray-950 dark:text-gray-200":
-                      activeSection === link.name,
+                    "text-gray-950 dark:text-gray-200": activeSection === link.name,
                   }
                 )}
                 href={link.hash}
@@ -39,12 +38,11 @@ export default function Header() {
                 }}
               >
                 {link.name}
-
                 {link.name === activeSection && (
                   <motion.span
-                  className="absolute inset-0 activ bg-transparent glow-background"
-                  id="activ"
-                  layoutId="activeSection"
+                    className="absolute inset-0 activ glow-background" // Added glow-background here
+                    id="activ"
+                    layoutId="activeSection"
                     transition={{
                       type: "spring",
                       stiffness: 380,
@@ -56,26 +54,26 @@ export default function Header() {
             </motion.li>
           ))}
         </ul>
-        <br/>
-        <ul className="flex flex-col items-end space-y-4">
+        <br />
+        <ul className="p-0 w-20 gap-y-1 space-y-4  flex flex-col items-end">
           <li>
-            <a href='https://www.linkedin.com/in/firyal-y-salsabila/' target="_blank" rel="noreferrer">
-              <SlSocialLinkedin className='w-10 h-10 text-white hover:w-16'/>
+            <a href="https://www.linkedin.com/in/firyal-y-salsabila/" target="_blank" rel="noreferrer">
+              <SlSocialLinkedin className="w-10 h-10 text-white hover:w-16" />
             </a>
           </li>
           <li>
-            <a href='mailto:firsabilac@gmail.com' target="_blank" rel="noreferrer">
-              <SlSocialGoogle className='w-10 h-10 text-white hover:w-16'/>
+            <a href="mailto:firsabilac@gmail.com" target="_blank" rel="noreferrer">
+              <SlSocialGoogle className="w-10 h-10 text-white hover:w-16" />
             </a>
           </li>
           <li>
-            <a href='https://www.github.com/firyal-salsa' target="_blank" rel="noreferrer">
-              <SlSocialGithub className='w-10 h-10 text-white hover:w-16'/>
+            <a href="https://www.github.com/firyal-salsa" target="_blank" rel="noreferrer">
+              <SlSocialGithub className="w-10 h-10 text-white hover:w-16" />
             </a>
           </li>
           <li>
-            <a href='https://www.instagram.com/viola.tte/' target="_blank" rel="noreferrer">
-              <SlSocialInstagram className='w-10 h-10 text-white hover:w-16'/>
+            <a href="https://www.instagram.com/viola.tte/" target="_blank" rel="noreferrer">
+              <SlSocialInstagram className="w-10 h-10 text-white hover:w-16" />
             </a>
           </li>
         </ul>

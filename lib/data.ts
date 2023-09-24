@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import maven from "@/public/maven.png";
+import ankasa from "@/public/ankasa.png";
+import blanja from "@/public/blanja.png"
 
 export const links = [
   {
@@ -62,21 +62,21 @@ export const projectsData = [
     description:
       "Online Shop web application",
     tags: ["Express.Js", "React.js", "AWS", "Docker", "Kubernetes", "Nginx", "Jenkins"],
-    imageUrl: corpcommentImg,
+    imageUrl: blanja,
   },
   {
     title: "Ankasa",
     description:
       "Online booking ticket web application",
     tags: ["Express.Js", "React.js", "AWS", "Docker", "Kubernetes", "Nginx", "Jenkins"],
-    imageUrl: rmtdevImg,
+    imageUrl: ankasa,
   },
   {
     title: "Maven",
     description:
-      "Worked as backend odoo developer, this is a Personalised Learning web application",
+      " a Personalised Learning web application",
     tags: ["Odoo", "Svelte"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: maven,
   },
 ] as const;
 

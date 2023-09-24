@@ -1,12 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { FaLinkedinIn, FaInstagram, FaGithubAlt, FaMediumM } from "react-icons/fa";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -22,7 +17,7 @@ export default function Intro() {
     >
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-4 mt-24 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
