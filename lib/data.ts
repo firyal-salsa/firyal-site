@@ -34,7 +34,7 @@ export const experiencesData = [
     title: "DevOps Engineer",
     location: "Jakarta, Indonesia",
     description:
-      "I am working as fulltime DevOps Engineer, Support CI/CD pipeline for developer team, Provide Infrastructure recovery disaster.",
+      "I am working as fulltime DevOps Engineer",
     icon: React.createElement(CgWorkAlt),
     date: "September 2023 - now",
   },
@@ -42,7 +42,7 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "Bandung, Indonesia",
     description:
-      "I worked as a Software Engineer for 1 year 7 month, I used Odoo",
+      "I worked as a Software Engineer (1 year 7 month) used Odoo",
     icon: React.createElement(CgWorkAlt),
     date: "February 2022 - August 2023",
   },
