@@ -17,16 +17,12 @@ export default function Intro() {
     >
 
       <motion.h1
-        className="mb-4 mt-24 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-4 mt-24 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl font-bold"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <p>
-        <h1 className="font-bold">Hey, there! I'm Firyal,</h1> {" "}
-        </p>
-        <p>
-        <h1 className="font-bold">a DevOps Engineer</h1>
-        </p>
+        Hey, there! I'm Firyal, {" "}
+        a DevOps Engineer
       </motion.h1>
     </section>
   );

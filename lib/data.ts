@@ -75,7 +75,7 @@ export const projectsData = [
     title: "Maven",
     description:
       " a Personalised Learning web application",
-    tags: ["Odoo", "Svelte"],
+    tags: ["Odoo"],
     imageUrl: maven,
   },
 ] as const;

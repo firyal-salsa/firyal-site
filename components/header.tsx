@@ -13,10 +13,14 @@ export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
+    const textShadowStyle = {
+      textShadow: '0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f0f, 0 0 70px #f0f, 0 0 80px #f0f, 0 0 100px #f0f',
+    };
+
   return (
     <header className="z-[999] relative">
       <nav className="fixed left-28 bottom-16 -translate-x-1/2">
-        <ul className="w-[22rem] items-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+        <ul className="">
           {links.map((link) => (
             <motion.li
               className="h-3/4 flex items-center relative"
@@ -26,9 +30,9 @@ export default function Header() {
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-end px-3 py-3 transition text-white relative", // Added relative here
+                  "flex w-full items-center justify-end px-3 py-3 transition text-white",
                   {
-                    "text-gray-950 dark:text-gray-200": activeSection === link.name,
+                    "text-gray-950 dark:text-gray-200 glow-background": activeSection === link.name,
                   }
                 )}
                 href={link.hash}
@@ -39,8 +43,8 @@ export default function Header() {
               >
                 {link.name}
                 {link.name === activeSection && (
-                  <motion.span
-                    className="absolute inset-0 activ glow-background" // Added glow-background here
+                  <motion.p
+                    className="absolute inset-0 activ" // Added glow-background here
                     id="activ"
                     layoutId="activeSection"
                     transition={{
@@ -48,7 +52,7 @@ export default function Header() {
                       stiffness: 380,
                       damping: 30,
                     }}
-                  ></motion.span>
+                  ></motion.p>
                 )}
               </Link>
             </motion.li>
