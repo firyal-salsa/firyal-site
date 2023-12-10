@@ -1,3 +1,5 @@
+"use client";
+import { useEffect, useState } from 'react';
 import Header from "@/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -19,6 +21,25 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [shouldHideHeader, setShouldHideHeader] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const shouldHide = window.innerWidth < 1026;
+      setShouldHideHeader(shouldHide);
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <html lang="en" className="!scroll-smooth">
       <body
@@ -32,7 +53,7 @@ export default function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Header />
+          {!shouldHideHeader && <Header />}
             {children}
             <Footer />
 
