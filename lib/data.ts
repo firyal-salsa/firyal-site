@@ -9,23 +9,23 @@ import blanja from "@/public/blanja.png"
 export const links = [
   {
     name: "Home",
-    hash: "#home",
+    hash: "home",
   },
   {
     name: "About",
-    hash: "#about",
+    hash: "about",
   },
   {
     name: "Projects",
-    hash: "#projects",
+    hash: "projects",
   },
   {
     name: "Experience",
-    hash: "#experience",
+    hash: "experience",
   },
   {
     name: "Contact",
-    hash: "#contact",
+    hash: "contact",
   },
 ] as const;
 
@@ -34,7 +34,7 @@ export const experiencesData = [
     title: "DevOps Engineer",
     location: "Jakarta, Indonesia",
     description:
-      "I am working as fulltime DevOps Engineer",
+      "Responsible for minimum downtime, service mitigation and life cycle.",
     icon: React.createElement(CgWorkAlt),
     date: "September 2023 - now",
   },
@@ -42,15 +42,15 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "Bandung, Indonesia",
     description:
-      "I worked as a Software Engineer (1 year 7 month) used Odoo",
+      "Handled various projects using Odoo.",
     icon: React.createElement(CgWorkAlt),
     date: "February 2022 - August 2023",
   },
   {
-    title: "Graduate Bootcamp",
-    location: "Arkademy Tech Academy, Indonesia",
+    title: "Graduated DevOps Bootcamp",
+    location: "Pijar Camp, Indonesia",
     description:
-      "I took DevOps class.",
+      "Studied Express.Js, React.Js, Shell Script, AWS, Jenkins, Docker, Kubernetes, Nginx,Prometheus, and Grafana.",
     icon: React.createElement(LuGraduationCap),
     date: "June 2021 - October 2021",
   },
