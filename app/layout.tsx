@@ -11,7 +11,7 @@ import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+const metadata = {
   title: "Firyal Yusriyah Salsabila",
   description: "a DevOps Engineer and Odoo Developer.",
 };
