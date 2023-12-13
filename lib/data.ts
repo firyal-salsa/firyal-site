@@ -60,14 +60,18 @@ export const projectsData = [
   {
     title: "Blanja",
     description:
-      "Online Shop web application",
+      `Online Shop web application
+      
+      https://bit.ly/blanja-porto`,
     tags: ["Express.Js", "React.js", "AWS", "Docker", "Kubernetes", "Nginx", "Jenkins"],
     imageUrl: blanja,
   },
   {
     title: "Ankasa",
     description:
-      "Online booking ticket web application",
+      `Online booking ticket web application
+      
+      https://bit.ly/ankasa-porto`,
     tags: ["Express.Js", "React.js", "AWS", "Docker", "Kubernetes", "Nginx", "Jenkins"],
     imageUrl: ankasa,
   },
