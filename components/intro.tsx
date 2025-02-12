@@ -4,26 +4,29 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import SectionHeading from "./section-heading";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
-    <section
-      ref={ref}
-      id="home"
-      className="mb-32 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
-    >
-
-      <motion.h1
-        className="mb-4 mt-24 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl font-bold"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        Hey, there! I'm Firyal, {" "}
-        a DevOps Engineer
-      </motion.h1>
-    </section>
+    <motion.section
+          ref={ref}
+          className="mb-32 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.175 }}
+          id="intro"
+        >
+          <SectionHeading>
+            <h3>
+              Firyal Yusriyah Salsabila
+            </h3>
+            <h1>
+              DevOps Engineer
+            </h1>
+          </SectionHeading>
+        </motion.section>
   );
 }

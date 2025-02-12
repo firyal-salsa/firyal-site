@@ -17,7 +17,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>Hey, There!</SectionHeading>
       <p className="mb-3">
       I'm a DevOps Engineer from Indonesia with over a year and seven months of experience
       as a Backend Odoo Developer. I earned my S.Tr.Kom degree from Politeknik Piksi Ganesha, 
@@ -25,7 +25,7 @@ export default function About() {
       </p>
       <p>
       I'm committed to lifelong learning. I've worked with various programming languages and tools,
-       including Odoo, Next.Js, AWS EC2, Nginx, Docker, and Github Action.
+       including Odoo, Next.Js, AWS EC2, Nginx, Docker, Github Action, Clickhouse, Confluent Kafka, and Linux.
       </p>
     </motion.section>
   );
